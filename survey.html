@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="title">
+   <title>Customer Survey Form</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="title">
+        <h1>Customer Survey Form</h1>
+    </header>
+
+<section>
+    <div class="container">
+        
+        <form class="survey-form">
+            
+        <div class="row-tab">
+            <div class="label-tab">
+                <label>FirstName</label>
+            </div>
+            <div class="input-tab">
+                <input type="text" name="FirstName" placeholder="FirstName">
+            </div>
+        </div>
+
+        <div class="row-tab">
+            <div  class="label-tab">
+                <label>LastName</label>
+            </div>
+            <div class="input-tab">
+                <input type="text" name="LastName" placeholder="lastname">
+            </div>
+        </div>
+        
+        <div class="row-tab">
+            <div class="label-tab">
+                <label>Date of Birth</label>
+            </div>
+            <div class="select-tab">
+                <select name="month" class="select-box">
+                    <option value="month">month</option>
+                    <option value="january">january</option>
+                    <option value="february">february</option>
+                    <option value="march">march</option>
+                    <option value="april">april</option>
+                    <option value="may">may</option>
+                    <option value="june">june</option>
+                    <option value="july">july</option>
+                    <option value="august">august</option>
+                    <option value="september">september</option>
+                    <option value="october">october</option>
+                    <option value="november">november</option>
+                    <option value="december">december</option>
+
+                    
+                </select> 
+                
+                <select name="days" class="select-box">
+                    <option value="days">days</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <select name="year" class="select-box">
+                    <option value="year">year</option>
+                    <option value="1995">1995</option>
+                    <option value="1996">1996</option>
+                    <option value="1997">1997</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                    <option value="2002">2002</option>
+                    <option value="2003">2003</option>
+                    <option value="2004">2004</option>
+                    <option value="2005">2005</option>
+                    <option value="2006">2006</option>
+                    <option value="2007">2007</option>
+                    <option value="2008">2008</option>
+                    <option value="2009">2009</option>
+                    <option value="2010">2010</option>
+                    <option value="2011">2011</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row-tab">
+            <div class="label-tab">
+                <label>Email</label>
+            </div>
+            <div class="input-tab">
+                <input type="text" name="Email" placeholder="xxxxxxx@gmail.com">
+            </div>
+        </div>
+       
+        <div class="row-tab">
+            <div class="label-tab" for="name">
+                <label>Profession</label>
+            </div>
+            <div class="input-tab">
+                <input type="text"  placeholder="student/employee">
+            </div>
+        </div>
+       
+        <div class="row-tab">
+            <div class="label-tab">
+                <label>MobileNumber</label>
+            </div>
+            <div class="input-tab">
+                <input type="text" name="MobileNumber" placeholder="9XXXXXXXXX">
+            </div>
+        </div>
+
+        <div class="row-tab">
+            <div class="label-tab">
+                <label>country</label>
+            </div>
+            <div class="select-tab">
+                <select>
+                    <option>None</option>
+                    <option>Australia</option>
+                    <option>Canada</option>
+                    <option>Chaina</option>
+                    <option>Germanay</option>
+                    <option>France</option>
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>Kenya</option>
+                    <option>South Africa</option>
+                    <option>Turkey</option>
+                    <option>Zimbabwe</option>
+                </select>
+            </div>
+        </div>
+       
+        <div class="input">
+            <div class="label-tab">
+               <label>Gender</label>
+            </div>
+            <div class="row-tab">  
+              <input type="checkbox" id="male">
+              <label for="male">Male</label>
+                <br>
+              <input type="checkbox" id="female">
+              <label for="female">Female</label>
+            <br>
+              <input type="checkbox" id="not">
+              <label for="not">NotMention</label>
+            
+            </div>
+            <div class="last">
+            <input type="button" value="submit" class="submit" onclick="fun()">
+            <br>
+            <input type="button" value="reset" class="reset" onclick="fun2()">
+        </div>
+
+        </div>
+        
+        </form>
+        
+    </div>
+    
+</selection>
+<script>
+    function fun2()
+    {
+        alert("your data reset successfully")
+    }
+    function fun()
+    {
+        alert("your data submited successfully")
+    }
+</script>
+</body>
+</html>
